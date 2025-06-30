@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRAZYBOTZZ</title>
+  <style>
+    /* Reset & font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      animation: slideDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #00ffe1;
+      text-shadow: 0 0 10px #00ffe1;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ddd;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    }
+
+    .card h2 {
+      color: #00ffe1;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00ffe1;
+      border: none;
+      color: #000;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00e0cc;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0 }
+      to { transform: translateY(0); opacity: 1 }
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #00ffe1; }
+      100% { text-shadow: 0 0 20px #00ffe1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="animation:glow 2s infinite alternate;">Wellcome To<br>Website Payment<br>CRAZYBOTZZ</h1>
+    <p>Silahkan Melakukan Transaksi Jika Berminat Membeli Produk kami</p>
+  </header>
+
+  <div class="container">
+   <div class="card">
+    	<h2>Payment Dana 💸</h2>
+			<h1 id="payment-number">083874030145</h1>
+			<button class="button" onclick="copyPaymentNumber()">Salin Nomor Dana</button>
+			</div>
+			<form>
+			  <div class="card">
+				<h2>Payment Gopay 💸</h2>
+			<h1 id="payment-number">Tidak Tersedia</h1>
+			<button class="button" onclick="copyPaymentNumber()">Salin Nomor Gopay</button>
+			</div>
+		
+			<form>
+			<div class="card">
+     	<h2>Payment Ovo 💸</h2>
+			<h1 id="payment-number">Tidak Tersedia</h1>
+			<button class="button" onclick="copyPaymentNumber()">Salin Nomor Ovo</button>
+			</div>
+			<form>
+    <div class="card">
+		<h2>Payment Qris 💸</h2>
+		<p>Silakan scan QR code di bawah ini untuk melakukan pembayaran:</p>
+		<div class="qr-code">
+			<img src="https://img1.pixhost.to/images/6823/616179574_yunilovejoo.jpg" alt="QRIS" width="100%" height="100%">
+	<button class="button">Payment Qris CRAZYBOTZZ</button>
+			</div>
+			 </div>
+<div>
+        <form>
+	  		<div class="card">
+				<h2>Website Payment Owner</h2>
+	<a href="https://crazybotzz16.github.io/Payment" target="_blank" style="background-color: #00ffe1; color: #000; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none;">Kunjungin Website Payment Owner</a>
+				</div>
+				</div>
+        <form>
+	  		<div class="card">
+				<h2>WhatsApp Owner</h2>
+	<a href="https://wa.me/6283165902633?text=Hai,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda" style="background-color: #00ffe1; color: #000; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none;">Chat WhatsApp Owner</a>
+
+				</div>
+
+  <footer>
+    © CRAZYBOTZZ 2025 - 2026
+  </footer>
+
+<script>
+			function copyPaymentNumber() {
+				var paymentNumber = document.getElementById("payment-number").textContent;
+				navigator.clipboard.writeText(paymentNumber).then(function() {
+					alert("NOMOR PAYMENT CRAZYBOTZZ BERHASIL DI SALIN!");
+				}, function(err) {
+					alert("NOMOR PAYMENT CRAZYBOTZZ GAGAL DI SALIN!");
+				});
+			}
+		</script>
+		</div>
+</body>
+</html>
